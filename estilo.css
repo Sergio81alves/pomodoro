@@ -15,23 +15,62 @@ a{
 .titulo{
     text-align: start;
 }
-.principal{
-    margin: 24px 0px 24px 0px;
+.principal, .tarefas{
+    margin: 24px 20px 24px 0px;
     padding: 20px;
     border: 1px solid rgb(37, 36, 36);
     border-radius: 19px;
 }
-.principal__header{
+.principal__header, .tarefas__header{
     padding-bottom: 20px;
+    margin-bottom: 20px;
     border-bottom: 1px solid rgb(37, 36, 36);
 }
-.principal__header--left{
+.principal__header--left, .tarefas__header--left, .modo__atual--text, .proximo__modo--text{
     font-size: small;
     text-align: start;
+    margin: 0px 0 20px ;
 }
-.principal__header--left h2{
-    font-size: 25px;
+.principal__header--left h2, .tarefas__header--left h2 {
+    font-size: 18px;
 }
-.principal__header--right{
+.principal__header--left span, .tarefas__header--left span, .proximo__modo--text span{
+    font-size: 11px;
+}
+.principal__header--right, .tarefas__header--right, .modo__atual--img, .proximo__modo--img {
     text-align: end;
+}
+
+.modo__atual--text h3, .proximo__modo--text h3{
+    font-size: 16px;
+}
+.lista__tarefas{
+    margin-bottom: 200px;
+}
+.lista__tarefas--text{
+    text-align: left;
+    font-size: medium;
+}
+.lista__tarefas--text input{
+    background: #484848;
+    margin-right: 5px;
+
+}
+.tarefas__footer{
+    text-align: left;
+    font-size: 22px;
+    
+}
+.tarefas__footer input{
+    background-color: #52525B;
+    margin-right: 12px;
+    border-radius: 9px;
+    padding: 8px;
+}
+.tarefas__footer button{
+    color: beige;
+    background-color: #84CC16;
+    border-radius: 9px;
+    padding: 8px;
+    
 }

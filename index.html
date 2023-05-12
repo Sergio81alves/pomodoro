@@ -56,7 +56,7 @@
         
             <main>
                 <div class="row">
-                    <section class="principal col-6">
+                    <section class="principal col-5">
                         <div class="principal__header row">
                             <div class="principal__header--left col-6">
                                 <h2>Dados da sessão</h2>
@@ -70,16 +70,26 @@
                         </div>
                         
         
-                        <div class="modo__atual">
-                            <h3>Modo atual:</h3>
-                            <span>Cíclo atual do cronômetro</span>
-                            <a onclick="modoAtual()"><img src="img/Mode-Badge.png" alt=""></a>
+                        <div class="modo__atual row">
+                            <div class="modo__atual--text col-6">
+                                <h3>Modo atual:</h3>
+                                <span>Cíclo atual do cronômetro</span>
+                            </div>
+                            <div class="modo__atual--img col-6">
+                               <a onclick="modoAtual()"><img src="img/Mode-Badge.png" alt=""></a> 
+                            </div>
+                            
                         </div>
         
-                        <div class="proximo__modo">
-                            <h3>Próximo modo:</h3>
-                            <span>Qual cíclo será ativado</span>
-                            <a onclick="modoAtual()"><img src="img/img2.png" alt=""></a>
+                        <div class="proximo__modo row">
+                            <div class="proximo__modo--text col-6">
+                                <h3>Próximo modo:</h3>
+                                <span>Qual cíclo será ativado</span>
+                            </div>
+                            <div class="proximo__modo--img col-6">
+                                <a onclick="modoAtual()"><img src="img/img2.png" alt=""></a>
+                            </div>
+    
                         </div>
         
                         <div>
@@ -92,44 +102,47 @@
                     </section>
         
         
-                    <section class="tarefas col-6 float-right">
-                        <div>
-                            <h2>Lista de tarefas</h2>
-        
-                            <span>Seus objetivos para essa sessão</span>
-        
-                            <img src="img/jato.png" alt="">
+                    <section class="tarefas col-5 float-right">
+                        <div class="tarefas__header row">
+                            <div class="tarefas__header--left col-6">
+                                <h2>Lista de tarefas</h2>
+                                <span>Seus objetivos para essa sessão</span>
+                            </div>
+                            
+                            <div class="tarefas__header--right col-6"><img src="img/jato.png" alt=""></div>
+                            
                         </div>
-                        <hr>
-        
-                        <div>
+                        
+                        <div class="lista__tarefas">
                             <fieldset>
-                                <div>
+                                <div class="lista__tarefas--text">
                                     <input type="checkbox">
                                     <label>Escrever e-mail importante.</label>
                                 </div>
-                                <div>
+                                <div class="lista__tarefas--text">
                                     <input type="checkbox">
                                     <label>Terminar redação</label>
                                 </div>
-                                <div>
+                                <div class="lista__tarefas--text">
                                     <input type="checkbox">
                                     <label>Preparar vlog novo</label>
                                 </div>
-                                <div>
+                                <div class="lista__tarefas--text">
                                     <input type="checkbox">
                                     <label>Seguir @ruy.dev no instagram </label>
                                 </div>
-                                <div>
+                                <div class="lista__tarefas--text">
                                     <input type="checkbox">
                                     <label>Ir para a academia</label>
                                 </div>
                             </fieldset>
                         </div>
         
-        
-                        <input type="text" placeholder="Nova tarefa">
-                        <button class="button">Adicionar</button>
+                        <div class="tarefas__footer">
+                            <input type="text" placeholder="Nova tarefa">
+                            <button class="button">Adicionar</button>
+                        </div>
+                       
                     </section>
                 </div>
             </main>
