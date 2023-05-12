@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    background-color: black;
+    text-align: center;
+}
+a{
+    color: beige;
+    text-decoration: none;
+}
+
+.container{
+    margin: 40px 48px;
+}
+.titulo{
+    text-align: start;
+}
+.principal{
+    margin: 24px 0px 24px 0px;
+    padding: 20px;
+    border: 1px solid rgb(37, 36, 36);
+    border-radius: 19px;
+}
+.principal__header{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(37, 36, 36);
+}
+.principal__header--left{
+    font-size: small;
+    text-align: start;
+}
+.principal__header--left h2{
+    font-size: 25px;
+}
+.principal__header--right{
+    text-align: end;
+}
