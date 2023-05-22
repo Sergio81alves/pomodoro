@@ -12,15 +12,17 @@ function pause(){
 }
 function stopp(){
     clearInterval(interval)
-    second = 0
-    minute = 0
+    second = 00
+    minute = 00
     digitalEllement.innerHTML = "00:00"
+
+    location.reload()
 }
 
 
 function counter() {
     second++
-    digitalEllement.innerHTML = `${minute} : ${second}`
+    digitalEllement.innerHTML = `${fixZero(minute)}:${fixZero(second)}`
     if(second == 60){
         minute ++
         second = 0
